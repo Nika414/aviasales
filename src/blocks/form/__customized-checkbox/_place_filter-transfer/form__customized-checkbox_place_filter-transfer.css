@@ -1,0 +1,8 @@
+.form__customized-checkbox_place_filter-transfer {
+  border-radius: 2px;
+}
+
+.form__customized-checkbox_place_filter-transfer::before {
+  height: 8px;
+  background-image: url(../../../../images/Check.svg);
+}
