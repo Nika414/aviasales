@@ -1,8 +1,8 @@
-import FilterBarHorizontal from "./FilterBarHorizontal";
-import Filters from "./Filters";
-import Card from "./Card";
-import S7Logo from "../images/S7Logo.png";
-import XiamenAirLogo from "../images/XiamenAirLogo.png";
+import FilterBarHorizontal from './FilterBarHorizontal';
+import Filters from './Filters';
+import Card from './Card';
+import S7Logo from '../images/S7Logo.png';
+import XiamenAirLogo from '../images/XiamenAirLogo.png';
 
 export default function Main() {
   return (
