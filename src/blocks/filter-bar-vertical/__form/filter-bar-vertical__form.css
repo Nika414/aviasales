@@ -1,0 +1,6 @@
+.filter-bar-vertical__form {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+}
