@@ -6,24 +6,35 @@
 @import url(./blocks/header/header.css);
 @import url(./blocks/header/__logo/header__logo.css);
 
+@import url(./blocks/main/main.css);
+@import url(./blocks/main/__container/main__container.css);
+
 @import url(./blocks/filter-bar-vertical/__container/filter-bar-vertical__container.css);
 @import url(./blocks/filter-bar-vertical/__title/filter-bar-vertical__title.css);
 @import url(./blocks/filter-bar-vertical/__form/filter-bar-vertical__form.css);
 
+@import url(./blocks/form/__label/form__label.css);
 @import url(./blocks/form/__checkbox/form__checkbox.css);
 @import url(./blocks/form/__customized-checkbox/form__customized-checkbox.css);
 @import url(./blocks/form/__customized-checkbox/_place_filter-transfer/form__customized-checkbox_place_filter-transfer.css);
+@import url(./blocks/form/__text/form__text.css);
+
+@import url(./blocks/form/__customized-checkbox/_place_filter-airways/form__customized-checkbox_place_filter-airways.css);
+@import url(./blocks/filter-bar-vertical/__container/_place_filter-airways/filter-bar-vertical__container_place_filter-airways.css);
 
 
+@import url(./blocks/filter-bar-horizontal/__container/filter-bar-horizontal__container.css);
+@import url(./blocks/filter-bar-horizontal/__button/filter-bar-horizontal__button.css);
+@import url(./blocks/filter-bar-horizontal/__button/_active/filter-bar-horizontal__button_active.css);
+@import url(./blocks/filter-bar-horizontal/__button/_type/filter-bar-horizontal__button_type_optimal.css);
+@import url(./blocks/filter-bar-horizontal/__button/_type/filter-bar-horizontal__button_type_cheapest.css);
 
 
-
-
-
-
-
-
-
-
-
+@import url(./blocks/card/__container/card__container.css);
+@import url(./blocks/card/__flight-info-container/card__flight-info-container.css);
+@import url(./blocks/card/__price/card__price.css);
+@import url(./blocks/card/__company-logo/card__company-logo.css);
+@import url(./blocks/card/__flight-details/card__flight-details.css);
+@import url(./blocks/card/__span/_type_transparent/card__span_type_transparent.css);
+@import url(./blocks/card/__span/_type_bright/card__span_type_bright.css);
 

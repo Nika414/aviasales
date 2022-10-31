@@ -1,0 +1,14 @@
+.form__label {
+  display: block;
+  height: 20px;
+  padding: 10px 10px 10px 20px;
+  cursor: url("../../../images/Cursor.svg"), auto;
+}
+
+.form__label:last-of-type {
+  padding: 10px 10px 25px 20px;
+}
+
+.form__label:hover {
+  background: #f1fcff;
+}

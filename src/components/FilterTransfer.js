@@ -1,8 +1,8 @@
 import FilterBarVertical from "./FilterBarVertical";
 
-export default function FilterTransfer() {
+export default function FilterTransfer({text}) {
   return (
-    <FilterBarVertical text="КОЛИЧЕСТВО ПЕРЕСАДОК">
+    <FilterBarVertical text={text}>
       <label className="form__label from__label_place_filter-transfer">
         <input
           type="checkbox"
@@ -10,7 +10,7 @@ export default function FilterTransfer() {
           id="without-transfer"
         ></input>
         <span className="form__customized-checkbox form__customized-checkbox_place_filter-transfer"></span>
-        <span className="form__text">без пересадки</span>
+        <span className="form__text">Без пересадок</span>
       </label>
       <label className="form__label from__label_place_filter-transfer">
         <input
