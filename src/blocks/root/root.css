@@ -1,5 +1,5 @@
 .root {
-  background-color: #E5E5E5;;
+  background-color: var(--color-bg);
   font-family: var(--font-family), Arial, sans-serif;
   font-weight: 400;
   height: 100%;

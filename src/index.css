@@ -38,3 +38,5 @@
 @import url(./blocks/card/__span/_type_transparent/card__span_type_transparent.css);
 @import url(./blocks/card/__span/_type_bright/card__span_type_bright.css);
 
+@import url(./blocks/button-show-more/button-show-more.css);
+

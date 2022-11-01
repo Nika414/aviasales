@@ -4,5 +4,5 @@
   line-height: 18px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: #a0b0b9;
+  color: var(--color-greytext);
 }

@@ -3,6 +3,7 @@ import Filters from './Filters';
 import Card from './Card';
 import S7Logo from '../images/S7Logo.png';
 import XiamenAirLogo from '../images/XiamenAirLogo.png';
+import ButtonShowMore from './ButtonShowMore';
 
 export default function Main() {
   return (
@@ -42,6 +43,23 @@ export default function Main() {
           timingSum="21ч 15м"
           transfer="Без пересадок"
         />
+        <Card
+          price="13 400 Р"
+          companyLogo={S7Logo}
+          destination="MOW – HKT"
+          timing="10:45 – 08:00"
+          timingSum="21ч 15м"
+          transfer="Без пересадок"
+        />
+        <Card
+          price="13 400 Р"
+          companyLogo={XiamenAirLogo}
+          destination="MOW – HKT"
+          timing="10:45 – 08:00"
+          timingSum="21ч 15м"
+          transfer="Без пересадок"
+        />
+        <ButtonShowMore tickets="5" />
       </div>
     </div>
   );

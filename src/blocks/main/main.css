@@ -4,3 +4,12 @@
   display: flex;
   justify-content: flex-start;
 }
+
+@media screen and (max-width: 800px) {
+  .main {
+    width: 92.541%;
+    margin: 0 3.834% 0 3.625%;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
