@@ -1,0 +1,19 @@
+.search-bar-form__label {
+    width: 24.801%;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: inherit;
+    position: relative;
+}
+
+.search-bar-form__label:nth-of-type(1) {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.search-bar-form__label:nth-of-type(4) {
+    border-radius: 0px 5px 5px 0px;
+}
