@@ -1,5 +1,6 @@
 .search-bar-form__change-button-arrow {
     display: block;
+    transition: all 0.5s;
 }
 
 .search-bar-form__change-button-arrow:nth-of-type(1) {
