@@ -1,5 +1,5 @@
 .filter-bar-vertical__container {
-    height: 227px;
+    height: fit-content;
     width: 232px;
     border-radius: 5px;
     background-color: white;

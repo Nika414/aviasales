@@ -47,3 +47,5 @@
 @import url(./blocks/search-bar-form/__input/search-bar-form__input.css);
 @import url(./blocks/search-bar-form/__change-button/search-bar-form__change-button.css);
 @import url(./blocks/search-bar-form/__change-button-arrow/search-bar-form__change-button-arrow.css);
+
+@import url(./components/CustomedDatePicker/CustomedDatePicker.css);

@@ -10,5 +10,5 @@
 }
 
 .form__label:hover {
-  background: #f1fcff;
+  background: var(--color-additional-bg);
 }

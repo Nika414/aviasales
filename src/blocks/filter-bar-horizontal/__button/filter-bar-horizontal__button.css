@@ -3,7 +3,7 @@
   height: 49px;
   background: white;
   border: 1px solid #dfe5ec;
-  font-size: 12px;
+  font-size: var(--font-size-span);
   line-height: 20px;
   letter-spacing: 0.5px;
   color: var(--color-text);
@@ -14,5 +14,5 @@
 }
 
 .filter-bar-horizontal__button:hover {
-  background: #f1fcff;
+  background: var(--color-additional-bg);
 }
