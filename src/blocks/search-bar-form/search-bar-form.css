@@ -10,4 +10,5 @@
     border: 0;
     column-gap: 2px;
     border-bottom: 1px solid #DADADA;
+    position: relative;
 }
