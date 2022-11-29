@@ -1,0 +1,89 @@
+.react-datepicker {
+    font-family: var(--font-family) !important;
+    border: none !important;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 0px 0px 10px 10px !important;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range,
+.react-datepicker__month-text--selected,
+.react-datepicker__month-text--in-selecting-range,
+.react-datepicker__month-text--in-range,
+.react-datepicker__quarter-text--selected,
+.react-datepicker__quarter-text--in-selecting-range,
+.react-datepicker__quarter-text--in-range,
+.react-datepicker__year-text--selected,
+.react-datepicker__year-text--in-selecting-range,
+.react-datepicker__year-text--in-range,
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__month-text--keyboard-selected,
+.react-datepicker__quarter-text--keyboard-selected,
+.react-datepicker__year-text--keyboard-selected {
+    background: #008EFF !important;
+    border-radius: 10px !important;
+}
+
+.react-datepicker__current-month {
+    color: var(--color-blue) !important;
+}
+
+.react-datepicker__day:hover,
+.react-datepicker__month-text:hover,
+.react-datepicker__quarter-text:hover,
+.react-datepicker__year-text:hover {
+    border-radius: 10px !important;
+}
+
+.react-datepicker__day-names {
+    background: white !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.date-picker__wrapper {
+    width: 24.801% !important;
+    height: 60px !important;
+
+}
+
+.react-datepicker__header {
+    color: var(--color-blue) !important;
+    background: white !important;
+    padding: 20px 0 0 0 !important;
+    margin: 0 !important;
+    border: none !important;
+}
+
+.react-datepicker___custom-input {
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: white;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: inherit;
+    position: relative;
+    height: 60px;
+    padding: 20px 20px 20px 12px;
+    box-sizing: border-box;
+    background: url("../../images/Calendar.svg") no-repeat right;
+    background-origin: content-box;
+    background-color: white;
+}
+
+.react-datepicker___custom-input:focus {
+    box-shadow: 0px 0px 0px 2px #FF6F32;
+    outline: none;
+}
+
+.react-datepicker___custom-input_place_last {
+    border-radius: 0px 5px 5px 0px;
+}
+
+.react-datepicker-popper {
+    padding: 3px !important;
+    margin: 0 !important;
+}

@@ -1,59 +1,25 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
+import HorizontalFilterButton from './HorizontalFilterButton';
 
-export default function FilterBarHorizontal({ text, selector }) {
-  const [isCheapestButtonActive, setIsCheapestButtonActive] = useState(true);
-  const [isFastestButtonActive, setIsFastestButtonActive] = useState(false);
-  const [isOptimalButtonActive, setIsOptimalButtonActive] = useState(false);
+export default function FilterBarHorizontal() {
+  const [activeTub, setActiveTub] = useState('cheapest')
 
   function handleCheapestButtonState() {
-    if (!isCheapestButtonActive) {
-      setIsCheapestButtonActive(true);
-      setIsFastestButtonActive(false);
-      setIsOptimalButtonActive(false);
-    }
+    setActiveTub('cheapest')
   }
   function handleFastestButtonState() {
-    if (!isFastestButtonActive) {
-      setIsCheapestButtonActive(false);
-      setIsFastestButtonActive(true);
-      setIsOptimalButtonActive(false);
-    }
+    setActiveTub('fastest')
   }
 
   function handleOptimalButtonState() {
-    if (!isOptimalButtonActive) {
-      setIsCheapestButtonActive(false);
-      setIsFastestButtonActive(false);
-      setIsOptimalButtonActive(true);
-    }
+    setActiveTub('optimal')
   }
 
   return (
-    <div className={`filter-bar-horizontal__container ${selector}`}>
-      <button
-        onClick={handleCheapestButtonState}
-        className={`filter-bar-horizontal__button filter-bar-horizontal__button_type_cheapest ${
-          isCheapestButtonActive ? "filter-bar-horizontal__button_active" : ""
-        }`}
-      >
-        САМЫЙ ДЕШЕВЫЙ
-      </button>
-      <button
-        onClick={handleFastestButtonState}
-        className={`filter-bar-horizontal__button filter-bar-horizontal__button_type_fastest ${
-          isFastestButtonActive ? "filter-bar-horizontal__button_active" : ""
-        }`}
-      >
-        САМЫЙ БЫСТРЫЙ
-      </button>
-      <button
-        onClick={handleOptimalButtonState}
-        className={`filter-bar-horizontal__button filter-bar-horizontal__button_type_optimal ${
-          isOptimalButtonActive ? "filter-bar-horizontal__button_active" : ""
-        }`}
-      >
-        ОПТИМАЛЬНЫЙ
-      </button>
+    <div className="filter-bar-horizontal__container">
+      <HorizontalFilterButton onClick={handleCheapestButtonState} text="САМЫЙ ДЕШЕВЫЙ" activeTub={activeTub} type='cheapest' />
+      <HorizontalFilterButton onClick={handleFastestButtonState} text="САМЫЙ БЫСТРЫЙ" activeTub={activeTub} type='fastest' />
+      <HorizontalFilterButton onClick={handleOptimalButtonState} text="ОПТИМАЛЬНЫЙ" activeTub={activeTub} type='optimal' />
     </div>
   );
 }

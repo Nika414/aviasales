@@ -1,0 +1,25 @@
+.search-bar-form__change-button {
+    position: absolute;
+    top: 50%;
+    right: -13px;
+    transform: translate(0, -50%);
+    z-index: 1;
+    height: 26px;
+    width: 26px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background: white;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    cursor: url("../.././../images/Cursor.svg"), auto;
+    transition: all 0.5s;
+}
+
+.search-bar-form__change-button:hover {
+    background: var(--color-blue);
+}
+
+.search-bar-form__change-button:hover .search-bar-form__change-button-arrow {
+    stroke: white;
+}

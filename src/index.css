@@ -3,6 +3,8 @@
 @import url(./vendor/variables.css);
 @import url(./blocks/root/root.css);
 
+@import url(./blocks/app/app.css);
+
 @import url(./blocks/header/header.css);
 @import url(./blocks/header/__logo/header__logo.css);
 
@@ -38,3 +40,12 @@
 @import url(./blocks/card/__span/_type_transparent/card__span_type_transparent.css);
 @import url(./blocks/card/__span/_type_bright/card__span_type_bright.css);
 
+@import url(./blocks/button-show-more/button-show-more.css);
+
+@import url(./blocks/search-bar-form/search-bar-form.css);
+@import url(./blocks/search-bar-form/__label/search-bar-form__label.css);
+@import url(./blocks/search-bar-form/__input/search-bar-form__input.css);
+@import url(./blocks/search-bar-form/__change-button/search-bar-form__change-button.css);
+@import url(./blocks/search-bar-form/__change-button-arrow/search-bar-form__change-button-arrow.css);
+
+@import url(./blocks/react-datepicker/react-datepicker.css);

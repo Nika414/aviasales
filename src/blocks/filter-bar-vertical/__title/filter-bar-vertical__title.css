@@ -2,7 +2,7 @@
   width: 192px;
   height: 12px;
   left: 122px;
-  font-size: 12px;
+  font-size: var(--font-size-span);
   line-height: 12px;
   display: flex;
   align-items: flex-end;

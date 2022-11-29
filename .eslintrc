@@ -1,0 +1,48 @@
+{
+    "extends": [
+        "airbnb",
+        "airbnb/hooks",
+        "prettier",
+        "plugin:jsx-a11y/recommended"
+    ],
+    "plugins": [
+        "react",
+        "react-hooks",
+        "prettier"
+    ],
+    "rules": {
+        "react/react-in-jsx-scope": "off",
+        "spaced-comment": "error",
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "react/jsx-no-bind": [
+            1,
+            {
+                "allowFunctions": true
+            }
+        ],
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ],
+        "no-duplicate-imports": "error",
+        "dot-notation": "off",
+        "no-underscore-dangle": "off",
+        "linebreak-style": "off",
+        "no-nested-ternary": "off",
+        "class-methods-use-this": "off",
+        "react/prop-types": [
+            0
+        ]
+    },
+    "env": {
+        "browser": true
+    }
+}
