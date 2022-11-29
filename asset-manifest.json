@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/aviasales/static/css/main.f9eeb7a6.css",
-    "main.js": "/aviasales/static/js/main.179d2e9c.js",
+    "main.css": "/aviasales/static/css/main.1502fbad.css",
+    "main.js": "/aviasales/static/js/main.4ff5f699.js",
     "static/media/OpenSans-Regular.ttf": "/aviasales/static/media/OpenSans-Regular.77c09223204154ae8d43.ttf",
     "static/media/OpenSans-SemiBold.ttf": "/aviasales/static/media/OpenSans-SemiBold.2f17aae884058c5a85df.ttf",
-    "static/media/Cursor.svg": "/aviasales/static/media/Cursor.5e23277d9fba13433a83.svg",
-    "static/media/Logo.svg": "/aviasales/static/media/Logo.e26ec8af4931c7f01d6b7641defc8254.svg",
+    "static/media/Cursor.svg": "/aviasales/static/media/Cursor.e4dd8b41207faae38f1a.svg",
+    "static/media/Logo.svg": "/aviasales/static/media/Logo.109473ebc1394888cb51acf91841f956.svg",
     "index.html": "/aviasales/index.html",
-    "static/media/Check.svg": "/aviasales/static/media/Check.b3ce3c21e1b482d2d37a.svg",
-    "static/media/Selected.svg": "/aviasales/static/media/Selected.875570e8ab232496c500.svg",
-    "main.f9eeb7a6.css.map": "/aviasales/static/css/main.f9eeb7a6.css.map",
-    "main.179d2e9c.js.map": "/aviasales/static/js/main.179d2e9c.js.map"
+    "static/media/Calendar.svg": "/aviasales/static/media/Calendar.48162e0eb105346867d4.svg",
+    "static/media/Check.svg": "/aviasales/static/media/Check.68eaed38c8165bae30a5.svg",
+    "static/media/Selected.svg": "/aviasales/static/media/Selected.f27bdbcf31e4da8e3afb.svg",
+    "main.1502fbad.css.map": "/aviasales/static/css/main.1502fbad.css.map",
+    "main.4ff5f699.js.map": "/aviasales/static/js/main.4ff5f699.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9eeb7a6.css",
-    "static/js/main.179d2e9c.js"
+    "static/css/main.1502fbad.css",
+    "static/js/main.4ff5f699.js"
   ]
 }
