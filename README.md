@@ -8,6 +8,7 @@
 * Работоспособность поиска;
 * Работоспособность фильтров;
 * Пагинация;
+* Лоадер;
 
 **GitHub Pages**
 * [Ссылка на GitHub Pages](https://nika414.github.io/aviasales)
