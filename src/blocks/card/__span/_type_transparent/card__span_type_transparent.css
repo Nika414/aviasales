@@ -1,0 +1,8 @@
+.card__span_type_transparent {
+  font-weight: 600;
+  font-size: var(--font-size-span);
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--color-greytext);
+}

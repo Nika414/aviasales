@@ -1,0 +1,14 @@
+.filter-bar-vertical__title {
+  width: 192px;
+  height: 12px;
+  left: 122px;
+  font-size: var(--font-size-span);
+  line-height: 12px;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin: 20px 0 20px 0;
+  padding: 0;
+  font-weight: 600;
+}

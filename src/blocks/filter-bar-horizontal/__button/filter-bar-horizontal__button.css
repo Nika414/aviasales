@@ -1,0 +1,18 @@
+.filter-bar-horizontal__button {
+  min-width: 33.267%;
+  height: 49px;
+  background: white;
+  border: 1px solid #dfe5ec;
+  font-size: var(--font-size-span);
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: var(--color-text);
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  cursor: url('../../../images/Cursor.svg'), auto;
+}
+
+.filter-bar-horizontal__button:hover {
+  background: var(--color-additional-bg);
+}

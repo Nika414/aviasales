@@ -1,0 +1,8 @@
+.card__flight-details {
+  display: flex;
+  flex-direction: column;
+  width: 141px;
+  height: 39px;
+  align-items: flex-start;
+  justify-content: center;
+}

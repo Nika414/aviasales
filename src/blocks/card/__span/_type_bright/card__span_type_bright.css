@@ -1,0 +1,6 @@
+.card__span_type_bright {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--color-text);
+}

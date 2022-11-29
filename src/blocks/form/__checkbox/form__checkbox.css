@@ -1,0 +1,11 @@
+.form__checkbox {
+  display: none;
+}
+
+.form__checkbox:checked + .form__customized-checkbox::before {
+  opacity: 1;
+}
+
+.form__checkbox:checked + .form__customized-checkbox {
+  border: 1px solid var(--color-blue);
+}

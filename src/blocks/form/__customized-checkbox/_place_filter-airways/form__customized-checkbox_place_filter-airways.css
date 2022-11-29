@@ -1,0 +1,9 @@
+.form__customized-checkbox_place_filter-airways {
+    border-radius: 50px;
+}
+
+.form__customized-checkbox_place_filter-airways::before {
+    height: 12px;
+    background-image: url(../../../../images/Selected.svg);
+  }
+  

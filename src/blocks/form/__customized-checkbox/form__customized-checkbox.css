@@ -1,0 +1,18 @@
+.form__customized-checkbox {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #9abbce;
+  position: relative;
+}
+
+.form__customized-checkbox::before {
+  content: "";
+  display: block;
+  width: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
