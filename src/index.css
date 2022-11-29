@@ -48,4 +48,4 @@
 @import url(./blocks/search-bar-form/__change-button/search-bar-form__change-button.css);
 @import url(./blocks/search-bar-form/__change-button-arrow/search-bar-form__change-button-arrow.css);
 
-@import url(./components/CustomedDatePicker/CustomedDatePicker.css);
+@import url(./blocks/react-datepicker/react-datepicker.css);

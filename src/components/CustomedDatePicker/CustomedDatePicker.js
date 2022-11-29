@@ -1,10 +1,11 @@
 /* eslint-disable react/no-unstable-nested-components */
 
-import React, { useState, forwardRef } from 'react';
+import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import { ru } from 'date-fns/locale';
 import setDefaultOptions from 'date-fns/setDefaultOptions';
 import 'react-datepicker/dist/react-datepicker.css';
+import CustomedInput from './CustomedInput'
 
 setDefaultOptions({ locale: ru })
 
@@ -19,27 +20,20 @@ export default function CustomedDatePicker({ lastOne, placeholder }) {
         'Пт',
         'Сб'
     ];
-    const date = new Date();
-    const weekDay = date.getDay();
+    const currentDate = new Date();
+    const weekDay = currentDate.getDay();
 
-    const CustomInput = forwardRef(({ value, onClick, onChange }, ref) => (
-        <input
-            value={value}
-            className={`react-datepicker___custom-input ${lastOne && 'react-datepicker___custom-input_place_last'}`}
-            onClick={onClick}
-            onChange={onChange}
-            ref={ref}
-            placeholder={placeholder}
-            
-        />));
+
     return (
         <DatePicker wrapperClassName="date-picker__wrapper"
+            placeholderText={placeholder}
             showPopperArrow={false}
-            selected={startDate}
-            onChange={() => setStartDate(date)}
+            onChange={(date) => setStartDate(date)}
             dateFormat={`dd MMMM, ${days[weekDay]}`}
-            customInput={<CustomInput />}
-            minDate={startDate}       
+            selected={startDate}
+            customInput={<CustomedInput lastOne={lastOne} />}
+            minDate={currentDate}
+
         />
     );
 };

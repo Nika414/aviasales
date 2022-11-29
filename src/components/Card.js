@@ -6,6 +6,7 @@ export default function Card({
   timeEnd,
   timingSum,
   transfer,
+  transferDestination
 }) {
   return (
     <div className="card__container">
@@ -28,6 +29,7 @@ export default function Card({
           </div>
           <div className="card__flight-details">
             <div className="card__span_type_transparent">{transfer}</div>
+            {transfer !== 0 && (<div className="card__span_type_transparent">{transferDestination.join(', ')}</div>)}
           </div>
         </div>
       </div>

@@ -1,14 +1,14 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
 import CustomedDatePicker from './CustomedDatePicker/CustomedDatePicker';
 
 export default function SearchBar() {
     return (
         <div className="search-bar-form">
-            <label className="search-bar-form__label">
+            <label htmlFor="from" className="search-bar-form__label">
                 <input
                     type="text"
                     className="search-bar-form__input"
                     placeholder='откуда'
+                    id="from"
                 />
                 <button type="button" className='search-bar-form__change-button'>
                     <svg className='search-bar-form__change-button-arrow' width="13" height="6" viewBox="0 0 13 6" xmlns="http://www.w3.org/2000/svg">
@@ -19,14 +19,15 @@ export default function SearchBar() {
                     </svg>
                 </button>
             </label>
-            <label className="search-bar-form__label">
+            <label htmlFor="where" className="search-bar-form__label">
                 <input
                     type="text"
                     className="search-bar-form__input"
                     placeholder='куда'
+                    id="where"
                  />
             </label>
-            <CustomedDatePicker placeholder='Когда' />
+            <CustomedDatePicker placeholder='Когда'  />
             <CustomedDatePicker placeholder='Обратно' lastOne/>
         </div>
     );

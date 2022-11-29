@@ -1,7 +1,6 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
 export default function AirwaysOption({company}) {
     return(
-        <label className="form__label from__label_place_filter-airways">
+        <label htmlFor={company.id} className="form__label from__label_place_filter-airways">
         <input
           type="checkbox"
           className="form__checkbox form__checkbox_place_filter-airways"
