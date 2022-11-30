@@ -28,7 +28,7 @@ export const ticketsSlice = createSlice({
         setTickets(state, action) {
             console.log(action.payload);
             state.tickets = action.payload
-        }
+        },
     },
 });
 

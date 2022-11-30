@@ -1,14 +1,15 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable no-unused-vars */
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import DataListInput from 'react-datalist-input';
-import CityOption from './CityOption';
+import { searchTicketsByOrigin, searchTicketsByDestination } from '../store/searchTicketsSlice';
 import CustomedDatePicker from './CustomedDatePicker/CustomedDatePicker';
 
 
 export default function SearchBar() {
     const tickets = useSelector((state) => state.tickets.tickets);
+    const dispatch = useDispatch();
 
     const itemsOrigin = tickets.map((ticket) => ({
         id: ticket.info.origin,
@@ -26,12 +27,21 @@ export default function SearchBar() {
 
     const destinationItemsWithoutDoubles = itemsDestination.reduce((r, i) =>
         !r.some(j => !Object.keys(i).some(k => i[k] !== j[k])) ? [...r, i] : r
-        , [])
+        , []);
+
+function handleOriginChange(e) {
+    dispatch(searchTicketsByOrigin(e.target.value.toUpperCase()))
+}
+
+function handleDestinationChange(e) {
+    dispatch(searchTicketsByDestination(e.target.value.toUpperCase()))
+}
+
 
     return (
         <div className="search-bar-form">
             <div className='search-bar-form__wrapper'>
-                <DataListInput type="text"
+                <DataListInput onChange={handleOriginChange}  type="text"
                     className="react-datalist-input__container_place_first"
                     placeholder='Откуда'
                     id="from" items={originItemsWithoutDoubles} />
@@ -45,7 +55,7 @@ export default function SearchBar() {
                 </button>
             </div>
             <div className='search-bar-form__wrapper'>
-                <DataListInput type="text"
+                <DataListInput onChange={handleDestinationChange} type="text"
                     className="react-datalist-input__container_place_second"
                     placeholder='Куда'
                     id="where" items={destinationItemsWithoutDoubles} />
