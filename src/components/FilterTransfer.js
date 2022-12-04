@@ -13,7 +13,8 @@ export default function FilterTransfer({ text }) {
 
   return (
     <FilterBarVertical text={text}>
-      {transfersWithoutDubles.map((item) => (<TransferOption key={generateKey(item)} transfers={item} id={generateKey(item)} />))}
+      {transfersWithoutDubles.map((item) => 
+      (<TransferOption key={generateKey(item)} transfers={item} id={generateKey(item)} />))}
     </FilterBarVertical>
   );
 }

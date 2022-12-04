@@ -16,7 +16,7 @@ export const getCompanies = createAsyncThunk(
 export const companiesSlice = createSlice({
     name: 'companies',
     initialState: {
-        copanies: [],
+        companies: [],
     },
     reducers: {
         setCompanies(state, action) {

@@ -43,9 +43,16 @@
 @import url(./blocks/button-show-more/button-show-more.css);
 
 @import url(./blocks/search-bar-form/search-bar-form.css);
+@import url(./blocks/search-bar-form/__wrapper/search-bar-form__wrapper.css);
 @import url(./blocks/search-bar-form/__label/search-bar-form__label.css);
 @import url(./blocks/search-bar-form/__input/search-bar-form__input.css);
 @import url(./blocks/search-bar-form/__change-button/search-bar-form__change-button.css);
 @import url(./blocks/search-bar-form/__change-button-arrow/search-bar-form__change-button-arrow.css);
 
 @import url(./blocks/react-datepicker/react-datepicker.css);
+@import url(./blocks/react-datalist/react-datalict.css);
+
+@import url(./blocks/loader/loader.css);
+@import url(./blocks/loader/__img/loader__img.css);
+
+@import url(./blocks/rotation/rotation.css);
