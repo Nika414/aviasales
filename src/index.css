@@ -43,92 +43,16 @@
 @import url(./blocks/button-show-more/button-show-more.css);
 
 @import url(./blocks/search-bar-form/search-bar-form.css);
+@import url(./blocks/search-bar-form/__wrapper/search-bar-form__wrapper.css);
 @import url(./blocks/search-bar-form/__label/search-bar-form__label.css);
 @import url(./blocks/search-bar-form/__input/search-bar-form__input.css);
 @import url(./blocks/search-bar-form/__change-button/search-bar-form__change-button.css);
 @import url(./blocks/search-bar-form/__change-button-arrow/search-bar-form__change-button-arrow.css);
 
 @import url(./blocks/react-datepicker/react-datepicker.css);
+@import url(./blocks/react-datalist/react-datalict.css);
 
+@import url(./blocks/loader/loader.css);
+@import url(./blocks/loader/__img/loader__img.css);
 
-.react-datalist-input__container {
-    
-}
-
-.react-datalist-input__label {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: white;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-    border-radius: inherit;
-
-}
-
-
-
-
-.react-datalist-input__textbox {
-    width: 100%;
-    height: 60px;
-    padding: 0;
-    border: 0;
-    border-radius: inherit;
-    padding-left: 14px;
-    box-sizing: border-box;
-}
-
-.sreact-datalist-input__textbox::placeholder {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.5px;
-    text-transform: capitalize;
-    color: #9EA9B7;
-}
-
-.react-datalist-input__textbox:focus {
-    box-shadow: 0px 0px 0px 2px #FF6F32;
-    outline: none;
-}
-
-.react-datalist-input__listbox {
-    width: 100%;
-    position: absolute;
-    margin: 3px 0 0 0;
-    padding: 0;
-    border-radius: 0 0 5px 5px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    z-index: 10;
-    border: none;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.react-datalist-input__listbox-option {
-    cursor: pointer;
-    margin: 0;
-    padding: 5px 0 5px 5px;
-  }
-  
-
-  
-  .react-datalist-input__listbox-option:hover {
-    background-color: var(--color-additional-bg);
-  }
-  .search-bar-form__wrapper {
-    width: 24.801%;
-    height: 60px;
-    position: relative;
-  }
-
-  .react-datalist-input__container_place_first {
-    border-radius: 5px 0px 0px 5px;
-}
+@import url(./blocks/rotation/rotation.css);

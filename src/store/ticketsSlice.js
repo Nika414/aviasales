@@ -14,6 +14,9 @@ export const getTickets = createAsyncThunk(
         catch (err) {
             console.log(err)
         }
+        finally {
+            dispatch(setApiLoaded(true));
+        }
     }
 )
 
@@ -23,14 +26,24 @@ export const ticketsSlice = createSlice({
     name: 'tickets',
     initialState: {
         tickets: [],
+        ticketsWithFilters: [],
+        loaded: false,
     },
     reducers: {
         setTickets(state, action) {
             console.log(action.payload);
             state.tickets = action.payload
         },
+        setTicketswithFilters(state, action) {
+            console.log(action.payload);
+            state.ticketsWithFilters = action.payload
+        },
+        setApiLoaded(state, action) {
+            console.log(action.payload);
+            state.loaded = action.payload;
+        }
     },
 });
 
-export const { setTickets } = ticketsSlice.actions;
+export const { setTickets, setTicketswithFilters, setApiLoaded } = ticketsSlice.actions;
 export default ticketsSlice.reducer;

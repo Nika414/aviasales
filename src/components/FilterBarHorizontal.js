@@ -1,18 +1,26 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import HorizontalFilterButton from './HorizontalFilterButton';
+import { chooseSorting } from '../store/filterTicketsSlice'
 
 export default function FilterBarHorizontal() {
-  const [activeTub, setActiveTub] = useState('cheapest')
+  const [activeTub, setActiveTub] = useState('cheapest');
+  const dispatch = useDispatch();
+  
+  
 
   function handleCheapestButtonState() {
-    setActiveTub('cheapest')
+    setActiveTub('cheapest');
+    dispatch(chooseSorting('cheapest'))
   }
   function handleFastestButtonState() {
-    setActiveTub('fastest')
+    setActiveTub('fastest');
+    dispatch(chooseSorting('fastest'))
   }
 
   function handleOptimalButtonState() {
-    setActiveTub('optimal')
+    setActiveTub('optimal');
+    dispatch(chooseSorting('optimal'))
   }
 
   return (

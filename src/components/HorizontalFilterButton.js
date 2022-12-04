@@ -1,4 +1,6 @@
 export default function HorizontalFilterButton({onClick, activeTub, text, type}) {
+ 
+
     return(
         <button type='button'
         onClick={onClick}
